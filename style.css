@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  background-image: url("./images/duncan-adler-gHky8G4PbbA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.bg-img {
+  background-image: url("./images/landscape.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  --max-width: 1200px;
+  --padding: 1rem;
+
+  max-width: min(var(--max-width), 100%);
+  text-align: center;
+}
+.countdown-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.big-text {
+  margin: 0 1.5rem;
+  padding: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.countdown-el {
+  text-align: center;
+}
+
+.countdown-el span {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 50em) {
+  .countdown-container {
+    display: flex;
+    flex-direction: row;
+  }
+  h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+  }
+  .big-text {
+    margin: 0 3.5rem;
+    padding: 0.5rem;
+    font-size: 4rem;
+  }
+
+  .countdown-el span {
+    font-size: 1.25rem;
+  }
+}
+.quote-btn {
+  background-color: white;
+  color: #333;
+  padding: 1rem 2rem;
+  max-width: 300px;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+.quote {
+  max-width: 300px;
+  line-break: auto;
+  color: white;
+  font-size: 1rem;
+}
+@media (min-width: 50em) {
+  .quoteContainer {
+    padding: 3rem;
+  }
+  .quote {
+    max-width: 700px;
+
+    font-size: 1.25rem;
+  }
+}
+.dates {
+  width: fit-content;
+  margin: 0 auto;
+}
